@@ -1,0 +1,22 @@
+<link rel="import" href="../bower_components/polymer-redux/polymer-redux.html">
+<script src="../node_modules/redux/dist/redux.js"></script>
+
+<script>
+    //(function (scope) {
+
+    window.reducer = function (state, action) {
+        if (!state) {
+            return {
+            };
+        }
+
+        return state;
+    };
+
+    window.reduxStore = Redux.createStore(reducer);
+
+    /** @polymerBehavior */
+    window.ReduxStore = Object.assign({}, PolymerRedux(reduxStore));
+
+    //})(window);
+</script>

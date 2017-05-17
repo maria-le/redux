@@ -1,0 +1,19 @@
+<link rel="import" href="redux.html">
+
+
+<dom-module id="all-locally">
+    <script>
+        var redux = Redux.createStore(function(){});
+        /**
+         * @polymerStore
+         */
+        var store = PolymerRedux(redux);
+
+        Polymer({
+            id: 'imported-store',
+            behaviors: [
+                store
+            ]
+        });
+    </script>
+</dom-module>

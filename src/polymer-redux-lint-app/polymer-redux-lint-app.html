@@ -1,0 +1,31 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../all-locally.html">
+<link rel="import" href="../imported-behavior.html">
+<link rel="import" href="../imported-store-as-variable.html">
+<link rel="import" href="../imported-store.html">
+
+<dom-module id="polymer-redux-lint-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'polymer-redux-lint-app',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'polymer-redux-lint-app',
+        },
+      },
+
+    });
+  </script>
+</dom-module>

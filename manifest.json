@@ -1,0 +1,6 @@
+{
+  "name": "polymer-redux-lint",
+  "short_name": "polymer-redux-lint",
+  "start_url": "/",
+  "display": "standalone"
+}

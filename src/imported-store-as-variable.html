@@ -1,0 +1,15 @@
+<dom-module id="imported-store-as-variable">
+    <script>
+        /**
+         * @polymerStore
+         */
+        var polymerStore = PolymerRedux(reduxStore);
+
+        Polymer({
+            id: 'imported-store-as-variable',
+            behaviors: [
+                polymerStore
+            ]
+        });
+    </script>
+</dom-module>
